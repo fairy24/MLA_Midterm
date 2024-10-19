@@ -1,4 +1,4 @@
-from utils import *
+from starter_code.utils import load_train_sparse, load_valid_csv, load_public_test_csv
 
 import numpy as np
 import matplotlib.pyplot as plt
