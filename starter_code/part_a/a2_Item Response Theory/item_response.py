@@ -108,10 +108,11 @@ def irt(data, val_data, lr, iterations):
 
     for i in range(iterations):
         neg_lld = neg_log_likelihood(data, theta=theta, beta=beta)
+        val_neg_lld = neg_log_likelihood(val_data, theta=theta, beta=beta)
         score = evaluate(data=val_data, theta=theta, beta=beta)
         val_acc_lst.append(score)
         train_log_like.append(neg_lld)
-        val_log_like.append(score)
+        val_log_like.append(val_neg_lld)
         print("NLLK: {} \t Score: {}".format(neg_lld, score))
         theta, beta = update_theta_beta(data, lr, theta, beta)
 
