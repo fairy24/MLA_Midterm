@@ -1,5 +1,5 @@
 from sklearn.impute import KNNImputer
-from utils import *
+from starter_code.utils import load_train_sparse, load_valid_csv, load_public_test_csv
 import matplotlib.pyplot as plt
 
 def knn_impute_by_user(matrix, valid_data, k):
