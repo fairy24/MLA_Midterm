@@ -1,7 +1,7 @@
 #Since we decided to go for neural network, this stays unchanged.
 #Refer to our report for more information.
 
-from utils import *
+from starter_code.utils import load_train_sparse, load_valid_csv, load_public_test_csv
 from scipy.linalg import sqrtm
 
 import numpy as np
