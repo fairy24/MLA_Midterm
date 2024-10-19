@@ -1,7 +1,7 @@
 from scipy.stats import mode
 from sklearn.impute import KNNImputer
 from sklearn.utils import resample
-from utils import *
+from starter_code.utils import load_train_sparse, load_valid_csv, load_public_test_csv
 import numpy as np
 import torch
 import torch.nn as nn
